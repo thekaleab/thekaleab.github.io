@@ -1,0 +1,35 @@
+body{
+    background-color: gray;
+}
+h1{
+    color: lightblue;}
+.spans{
+    color: yellow;
+}
+
+h3{
+    color:lightblue;
+}
+h1,h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+p,ul{
+    font-family:cursive
+}
+#belowH1{
+    margin-top: 50px;
+}
+.column{
+    float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+.row{
+    content: "";
+  clear: both;
+  display: table 
+}
+#css{
+    padding-left: 20px;
+    width: 410px;
+}
