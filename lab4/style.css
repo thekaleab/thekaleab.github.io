@@ -1,0 +1,46 @@
+#left{
+    float:left;
+    clear: both;
+    
+}
+fieldset{
+    width: 60%;
+    margin:auto;
+}
+#right{
+    margin-left:50%;
+}
+#right input{
+    
+}
+#center{
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+.form-container {
+    /* border: 3px dashed red; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form-container>input{
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.form-container>label{
+    margin-top: 20px;
+}
+.form-container>textarea{
+    margin-top: 20px;
+    height: 175px;
+    width: 175px;
+}
+.form-container>select{
+    margin: 20px;
+}
+.form-container>select{
+    display: flex;
+}

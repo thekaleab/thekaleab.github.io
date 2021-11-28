@@ -4,27 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
     <form>
-        <p>Register now while seats are available</p>
-        <div>
-            First Name 
-            <input type="text" name="FirstName" >
+        <fieldset>
+            <legend>Workshop Registration</legend>
+            <p>Register now while seats are available</p>
+        <div id="left">
+            <div class="form-container">
+                <label>First Name </label>
+                <input type="text" name="FirstName" >
+            </div>
+            <div class="form-container">
+                <label>Last Name </label>
+                <input type="text" name="lastName" >
+            </div>
+            <div class="form-container">
+                <label>Company Institution </label>
+                
+                <input type="text" name="lastName" >
+            </div>
+            <div class="form-container">
+                <label>Address</label>
+                <textarea></textarea>
+            </div>
+            <div class="form-container">
+                <label>City</label>
+                
+                <input type="text" name = "city">
+            </div>
+            <div class="form-container">
+                <label>State/Province/Region</label>
+                <select>
+                    <option>State 1</option>
+                    <option>State 2</option>
+                    <option>State 3</option>
+                    <option>State 4</option>
+                    <option>State 5</option>
+                </select>
+            </div>
+            <div class="form-container">
+                <label>Country</label>
+               
+                <select>
+                    <option>Country 1</option>
+                    <option>Country 2</option>
+                    <option>Country 3</option>
+                    <option>Country 4</option>
+                    <option>Country 5</option>
+                </select>
+            </div>
+            <div class="form-container">
+                <label>Email</label>
+                
+                <input type="email">
+            </div>
+            <div class="form-container">
+                <label>Phone Number</label>
+                <input type="number">
+            </div>
         </div>
-        <div>
-            Last Name 
-            <input type="text" name="lastName" >
+        <div id="right">
+            <div class="form-container">
+                <a href="#" >Lunch</a> 
+            </div>
+            <div class="form-container">
+                <label>Meal Preference</label>
+                <select >
+                    <option>Vegeterian</option>
+                    <option>Vegan</option>
+                    <option>Meatatarian</option>
+                </select>
+            </div>
+            <div class="form-container">
+                <a href="#">Payment Details</a>
+            </div>
+            <div class="form-container">
+                <label> Payment Mode </label>
+               
+                <input type="checkbox">
+                <label>Cash</label>
+
+                <input type="checkbox">
+                <label>Cheque</label>
+
+                <input type="checkbox">
+                <label>Demand Draft</label>
+            </div>
+            <div class="form-container">
+                <label>DD Cheque No. </label>
+                <input type="text">
+            </div>
+            <div class="form-container">
+                <label>Drawn On (Bank Name)<label>
+                <input type="text">
+            </div>
+            <div class="form-container">
+                <label>Payable at</label>
+                
+                <input type="text">
+            </div>
         </div>
-        <div>
-            Company Institution 
-            <input type="text" name="lastName" >
+        <div id="center">
+            <button>Submit</button>
+            <button>Reset</button>
         </div>
-        <div>
-            Address
-            <textarea></textarea>
-        </div>
+        
+        </fieldset>
+        
+        
     </form>
 </body>
 </html>
