@@ -1,0 +1,8 @@
+main{
+    display: block;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 50px;
+}

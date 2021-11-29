@@ -27,9 +27,20 @@ p,ul{
 .row{
     content: "";
   clear: both;
-  display: table 
+  display: flex; 
 }
+
 #css{
     padding-left: 20px;
     width: 410px;
+}
+
+a:hover{
+    background-color: yellowgreen;
+}
+.succ{
+    height: 280px;
+}
+h4{
+    text-align: center;
 }

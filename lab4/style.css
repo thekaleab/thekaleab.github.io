@@ -10,9 +10,6 @@ fieldset{
 #right{
     margin-left:50%;
 }
-#right input{
-    
-}
 #center{
     margin-top: 10%;
     margin-left: 50%;
@@ -41,9 +38,16 @@ fieldset{
 .form-container>select{
     margin: 20px;
 }
-.form-container>select{
-    display: flex;
-}
 span{
     color: red;
+}
+#center{
+    margin-top: 300px;
+}
+.checkers{
+    margin-left: 25%;
+}
+.css{
+    padding-bottom: 10px;
+    width: 370px;
 }
