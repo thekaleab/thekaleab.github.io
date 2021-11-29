@@ -44,3 +44,6 @@ fieldset{
 .form-container>select{
     display: flex;
 }
+span{
+    color: red;
+}

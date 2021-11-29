@@ -5,9 +5,9 @@ function sum(array){
     //     sum+=array[i];
     // }
     // return sum;
-    return array.reduce((x,y)=>x+y);
+    return array.filter(t=>t>20).reduce((x,y)=>x+=y,0);
 }
-console.log(sum([1,2,3,4]));
+console.log(sum([1,2,3,4,20,25,45,90]));
 console.log(sum([1,2]));
 
 // Question 2;
@@ -19,7 +19,7 @@ function getNewArray(array2){
     //     }
     // }
     // return array3;
-    return array2.filter(t=>t.length>5);
+    return array2.filter(t=>t.length>5 && t.includes("a"));
 }
-let xx = ["abebebe","abebe","ab"];
+let xx = ["abebebe","abebe","ab","dfgfgr"];
 console.log(getNewArray(xx))
