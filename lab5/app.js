@@ -5,7 +5,8 @@ function sum(array){
     //     sum+=array[i];
     // }
     // return sum;
-    return array.filter(t=>t>20).reduce((x,y)=>x+=y,0);
+    const sum = array.filter(t=>t>20).reduce((x,y)=>x+=y,0); 
+    return sum;
 }
 console.log(sum([1,2,3,4,20,25,45,90]));
 console.log(sum([1,2]));
@@ -19,7 +20,8 @@ function getNewArray(array2){
     //     }
     // }
     // return array3;
-    return array2.filter(t=>t.length>5 && t.includes("a"));
+    const newArray = array2.filter(t=>t.length>5 && t.includes("a"));
+    return newArray;
 }
 let xx = ["abebebe","abebe","ab","dfgfgr"];
 console.log(getNewArray(xx))
