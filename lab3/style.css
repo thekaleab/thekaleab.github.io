@@ -32,6 +32,8 @@ a{
     display: flex;
    align-items: center;
    flex-wrap:wrap;
+   border: 2px dashed red;
+   justify-content: space-between;
 }
 .col2{
     flex-basis: 50%;
