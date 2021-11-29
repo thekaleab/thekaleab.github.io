@@ -23,5 +23,5 @@ function getNewArray(array2){
     const newArray = array2.filter(t=>t.length>5 && t.includes("a"));
     return newArray;
 }
-let xx = ["abebebe","abebe","ab","dfgfgr"];
+let xx = ["abebebee","abebe","ab","dfgfgr"];
 console.log(getNewArray(xx))
