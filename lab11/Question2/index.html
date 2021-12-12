@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Codes used are as follows</h1>
+    <p>
+        <h3>Method1</h3>
+        const http = require('http');<br>
+const fs = require('fs');<br>
+const server = http.createServer();<br>
+server.on('request', function (req, res) {<br>
+ res.writeHead(200, { 'Content-Type': 'image/jpeg' });<br>
+ let image = fs.readFileSync('./tiles.jpg');<br>
+ res.end(image, 'binary');<br>
+});
+server.listen(8080);<br>
+<br>
+<br>
+<h3>Method2</h3>
+const fs = require('fs');<br>
+const server = require('http').createServer();<br>
+server.on('request', (request, response) => {<br>
+ fs.readFile('./tiles.jpg', (err, data) => {<br>
+ if (err) throw err;<br>
+ response.end(data);<br>
+ });<br>
+});<br>
+server.listen(8000);<br>
+<br>
+<br>
+<h3>Method3</h3>
+require('http').createServer((req, res) => {<br>
+    const img = require('fs').createReadStream('./tiles.jpg');<br>
+    img.pipe(res);<br>
+   }).listen(9090, () => console.log("listening to 9090"));<br>
+
+const fs = require('fs');<br>
+const server = require('http').createServer();<br>
+server.on('request', (req, res) => {<br>
+ fs.createReadStream("./tiles.jpg").pipe(res);<br>
+});<br>
+server.listen(9000);<br>
+    </p>
+</body>
+</html>
